@@ -1,0 +1,61 @@
+CARA PAKAI API - COMPLYED_V2
+
+1) PRASYARAT
+- Python 3.10+ dan pip.
+- Jalankan dari folder root: D:\PROJECT TA YANG KELIATAN\COMPLYED\Complyed_V2
+
+2) INSTALL DEPENDENSI
+pip install -r requirements.txt
+
+3) JALANKAN SERVER
+python main.py
+
+Default server: http://localhost:5000
+Ganti port (opsional):
+$env:PORT=8000
+python main.py
+
+4) UPLOAD RULES SAJA (TANPA INPUT)
+ Rules bisa dikirim terpisah. Jika ada rules baru, rules lama akan diganti.
+	Form-data untuk rules bisa memakai key "rules" atau "file".
+
+4.1) RPS
+curl -X POST http://localhost:5000/api/rules -F "type=rps" -F "rules=@D:\path\rules2.xlsx"
+
+4.2) BUKU KURIKULUM
+curl -X POST http://localhost:5000/api/rules -F "type=buku_kurikulum" -F "rules=@D:\path\rules2.xlsx"
+
+4.3) LAPORAN PENELITIAN
+curl -X POST http://localhost:5000/api/rules -F "type=laporan_penelitian" -F "rules=@D:\path\rules2.xlsx"
+
+5) TEST API (UPLOAD INPUT)
+ Catatan: file input lama otomatis dihapus saat upload baru.
+ Rules hanya menerima .xlsx. Jika rules sudah diupload, input bisa dikirim tanpa rules.
+ Upload input hanya boleh membawa file utama (key: file).
+ Default response adalah JSON status. Nama PDF mengikuti nama file input.
+ File PDF disimpan dulu, dan akan dihapus setelah diunduh lewat GET /api/report.
+
+5.1) RPS
+curl -X POST http://localhost:5000/api/validate -F "type=rps" -F "file=@D:\path\input.xlsx"
+
+5.2) BUKU KURIKULUM
+curl -X POST http://localhost:5000/api/validate -F "type=buku_kurikulum" -F "file=@D:\path\input.pdf"
+
+5.3) LAPORAN PENELITIAN
+curl -X POST http://localhost:5000/api/validate -F "type=laporan_penelitian" -F "file=@D:\path\input.pdf"
+
+Catatan: POST /api/validate hanya mengembalikan JSON status.
+
+6) AMBIL PDF LAPORAN
+ Catatan: sistem akan mengambil file PDF terbaru di folder output.
+ File PDF akan dihapus setelah diunduh (GET /api/report).
+curl -O http://localhost:5000/api/report/rps
+curl -O http://localhost:5000/api/report/buku_kurikulum
+curl -O http://localhost:5000/api/report/laporan_penelitian
+
+7) PARAMETER OPSIONAL RPS (FORM)
+- rules_name: jika upload rules, pakai ini untuk menamai file rules yang disimpan
+- rules_name: jika tidak upload rules, pakai file rules yang sudah ada di RPS/Config
+
+Contoh dengan parameter:
+curl -X POST http://localhost:5000/api/validate -F "type=rps" -F "file=@D:\path\input.xlsx" -F "rules_name=rules.xlsx"

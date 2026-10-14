@@ -1,0 +1,205 @@
+{
+  "description": "Mapping untuk mengecek kesesuaian Deskripsi Sub CLO dengan Metode Pembelajaran. Tambah rule baru jika ada kata kerja capaian atau metode yang belum terwakili.",
+  "rules": [
+    {
+      "outcome_keywords": ["mengingat", "menyebutkan", "mendaftar", "menuliskan", "mengenali", "melafalkan", "menunjukkan", "memilih", "mencocokkan", "mendefinisikan", "menghafal", "mengulang", "mencatat", "menyalin", "mengidentifikasi"],
+      "recommended_methods": ["ceramah", "kuliah interaktif", "tanya jawab", "kuis", "drill", "latihan soal", "modul mandiri", "e-learning", "video pembelajaran", "pemaparan"],
+      "reason": "Capaian mengingat cocok dengan metode penyampaian langsung seperti ceramah, pemaparan, kuis, dan latihan berulang."
+    },
+    {
+      "outcome_keywords": ["menjelaskan", "memahami", "menguraikan", "merangkum", "menafsirkan", "menggambarkan", "mengklasifikasikan", "membandingkan", "mencontohkan", "memparafrase", "memprediksi", "menginterpretasikan", "mendeskripsikan", "menyimpulkan", "mengkategorikan", "mengilustrasikan"],
+      "recommended_methods": ["ceramah", "diskusi", "tutorial", "tanya jawab", "kuliah interaktif", "mind mapping", "flipped classroom", "e-learning", "studi literatur", "pemaparan", "video pembelajaran", "blended learning"],
+      "reason": "Capaian pemahaman didukung oleh ceramah, pemaparan, diskusi, tutorial, dan metode interaktif yang mendorong penjelasan ulang."
+    },
+    {
+      "outcome_keywords": ["mengimplementasikan", "implementasi", "menerapkan", "mempraktikkan", "menggunakan", "mengoperasikan", "menjalankan", "melaksanakan", "menghitung", "mendemonstrasikan", "mengerjakan", "melakukan", "menyesuaikan", "memproduksi", "memodifikasi", "memecahkan"],
+      "recommended_methods": ["praktikum", "project based learning", "demonstrasi", "simulasi", "latihan terstruktur", "workshop", "studi kasus", "role play", "problem based learning", "magang", "peer teaching"],
+      "reason": "Capaian aplikasi memerlukan praktik langsung seperti praktikum, simulasi, demonstrasi, atau proyek nyata."
+    },
+    {
+      "outcome_keywords": ["menganalisis", "analisis", "membedakan", "menelaah", "menguji", "membagi", "mendiagnosis", "mendeteksi", "menyelidiki", "mengkorelasikan", "menghubungkan", "memeriksa", "mengorganisasikan", "memecah", "mendekonstruksi", "menstrukturkan"],
+      "recommended_methods": ["studi kasus", "case based learning", "problem based learning", "diskusi kelompok", "presentasi", "analisis literatur", "peer review", "debat akademik", "jurnal reflektif", "flipped classroom", "collaborative learning", "team based learning"],
+      "reason": "Capaian analisis cocok dengan studi kasus, diskusi mendalam, problem based learning, dan peer review."
+    },
+    {
+      "outcome_keywords": ["mengevaluasi", "menilai", "mengkritisi", "memvalidasi", "memutuskan", "memprioritaskan", "mengargumentasikan", "mempertahankan", "mendebat", "merekomendasi", "membenarkan", "menjustifikasi", "mereview", "menilai ulang", "menguji hipotesis", "memberi penilaian"],
+      "recommended_methods": ["studi kasus", "diskusi", "presentasi", "peer review", "problem based learning", "debat akademik", "jurnal reflektif", "portofolio", "seminar", "collaborative learning", "team based learning", "review artikel ilmiah", "feedback dan revisi"],
+      "reason": "Capaian evaluasi memerlukan diskusi kritis, debat, peer review, presentasi argumentatif, dan sesi feedback."
+    },
+    {
+      "outcome_keywords": ["merancang", "mendesain", "desain", "menyusun", "membuat rancangan", "mengembangkan", "menciptakan", "membangun", "menghasilkan", "merumuskan", "merencanakan", "mengkonstruksi", "mensintesis", "mengintegrasikan", "membuat prototipe", "menyusun proposal", "membuat sistem", "memformulasikan", "menghasilkan karya"],
+      "recommended_methods": ["project based learning", "proyek", "praktikum", "simulasi", "workshop", "capstone project", "design thinking", "magang", "penelitian mandiri", "service learning", "hackathon", "tugas akhir"],
+      "reason": "Capaian mencipta memerlukan proyek nyata, workshop, design thinking, dan capstone project."
+    },
+    {
+      "outcome_keywords": ["berkolaborasi", "bekerja sama", "komunikasi", "berdiskusi", "bernegosiasi", "memimpin", "menyampaikan pendapat", "berbagi informasi", "membangun konsensus", "berkontribusi dalam tim", "memfasilitasi", "berinteraksi", "merespons", "mendengarkan aktif"],
+      "recommended_methods": ["diskusi kelompok", "collaborative learning", "presentasi", "project based learning", "team based learning", "seminar", "role play", "peer teaching", "problem based learning", "forum diskusi online", "cooperative learning"],
+      "reason": "Capaian kolaborasi dan komunikasi didukung oleh diskusi kelompok, proyek tim, presentasi, dan peer teaching."
+    },
+    {
+      "outcome_keywords": ["mempresentasikan", "memaparkan", "menyajikan", "menyampaikan hasil", "melaporkan", "mengemukakan", "menyampaikan secara lisan", "melakukan pitching", "memimpin diskusi", "moderasi", "melakukan tanya jawab", "memaparkan hasil", "memberi feedback lisan", "berkomunikasi efektif", "melakukan wawancara"],
+      "recommended_methods": ["presentasi", "presentasi kelompok", "seminar", "diskusi panel", "role play", "simulasi", "peer teaching", "debat", "forum akademik", "video presentasi", "team based learning", "feedback dan revisi", "pemaparan"],
+      "reason": "Capaian komunikasi lisan dan presentasi didukung oleh presentasi kelompok, seminar, diskusi panel, role play, dan sesi feedback."
+    },
+    {
+      "outcome_keywords": ["menulis", "mendokumentasikan", "menyusun laporan", "membuat makalah", "menulis esai", "menyusun artikel", "membuat ringkasan", "menyusun abstrak", "membuat notulensi", "menulis proposal", "menyusun SOP", "membuat manual", "menulis jurnal", "menyusun karya tulis", "menyusun laporan forensik", "menyusun laporan teknis", "menyusun laporan penelitian", "membuat dokumentasi"],
+      "recommended_methods": ["penulisan ilmiah", "workshop penulisan", "peer review", "jurnal reflektif", "portofolio", "tugas mandiri", "studi literatur", "presentasi tulisan", "collaborative writing", "tutorial akademik", "feedback dan revisi", "presentasi kelompok"],
+      "reason": "Capaian menulis dan dokumentasi didukung oleh workshop penulisan, peer review, portofolio, dan sesi feedback dan revisi."
+    },
+    {
+      "outcome_keywords": ["menyusun dan mempresentasikan", "membuat dan mempresentasikan", "merancang dan mempresentasikan", "mengembangkan dan mempresentasikan", "menyusun dan memaparkan", "membuat laporan dan mempresentasikan", "mendokumentasikan dan mempresentasikan"],
+      "recommended_methods": ["presentasi kelompok", "project based learning", "seminar", "workshop", "feedback dan revisi", "peer review", "portofolio", "pemaparan", "collaborative learning", "team based learning"],
+      "reason": "Capaian kombinasi menyusun dan mempresentasikan memerlukan presentasi kelompok, proyek, seminar, dan sesi feedback dan revisi."
+    },
+    {
+      "outcome_keywords": ["meneliti", "melakukan penelitian", "mengumpulkan data", "mengolah data", "menganalisis data", "mereview literatur", "melakukan survei", "melakukan observasi", "menyusun instrumen", "menginterpretasikan hasil", "membuat kesimpulan penelitian", "menulis karya ilmiah", "mempublikasikan", "melakukan studi lapangan"],
+      "recommended_methods": ["penelitian mandiri", "studi literatur", "survei", "observasi lapangan", "praktikum", "project based learning", "seminar", "penulisan ilmiah", "jurnal reflektif", "review artikel", "capstone project", "tugas akhir", "feedback dan revisi"],
+      "reason": "Capaian riset memerlukan penelitian mandiri, studi literatur, observasi lapangan, dan penulisan ilmiah."
+    },
+    {
+      "outcome_keywords": ["memecahkan masalah", "menyelesaikan masalah", "mencari solusi", "merumuskan solusi", "mengatasi hambatan", "troubleshooting", "debugging", "optimasi", "mengambil keputusan", "menganalisis akar masalah", "menentukan alternatif", "memilih solusi terbaik"],
+      "recommended_methods": ["problem based learning", "studi kasus", "case based learning", "simulasi", "project based learning", "diskusi kelompok", "design thinking", "hackathon", "workshop", "collaborative learning"],
+      "reason": "Capaian pemecahan masalah paling cocok dengan PBL, studi kasus, simulasi, dan design thinking."
+    },
+    {
+      "outcome_keywords": ["merefleksikan", "mengintrospeksi", "menunjukkan sikap profesional", "menghargai", "bertanggung jawab", "berkomitmen", "menunjukkan integritas", "beretika", "menghormati", "menginisiasi", "memotivasi diri", "mengelola waktu", "bersikap kritis", "menunjukkan kepemimpinan", "adaptif", "inovatif"],
+      "recommended_methods": ["jurnal reflektif", "portofolio", "presentasi diri", "peer assessment", "self assessment", "magang", "service learning", "mentoring", "studi kasus etika", "diskusi nilai profesional", "role play"],
+      "reason": "Capaian sikap dan refleksi profesional didukung oleh jurnal reflektif, portofolio, magang, dan peer assessment."
+    },
+    {
+      "outcome_keywords": ["menggunakan perangkat lunak", "mengoperasikan sistem", "memprogram", "membuat kode", "coding", "mengembangkan aplikasi", "mengelola basis data", "menggunakan tools digital", "melakukan komputasi", "membuat visualisasi data", "menggunakan platform digital", "melakukan analisis data digital", "mengintegrasikan teknologi", "otomasi proses", "mengembangkan perangkat lunak"],
+      "recommended_methods": ["praktikum komputer", "project based learning", "simulasi digital", "workshop teknologi", "e-learning", "blended learning", "demonstrasi software", "latihan terstruktur", "hackathon", "capstone project", "collaborative coding", "feedback dan revisi"],
+      "reason": "Capaian literasi digital memerlukan praktikum, workshop teknologi, simulasi, dan proyek berbasis teknologi."
+    },
+    {
+      "outcome_keywords": ["mengelola proyek", "merencanakan proyek", "menjadwalkan", "mengalokasikan sumber daya", "memonitor progres", "koordinasi tim", "membuat timeline", "menyusun WBS", "mengelola risiko", "mengintegrasikan komponen proyek", "melaporkan kemajuan"],
+      "recommended_methods": ["project based learning", "capstone project", "simulasi proyek", "magang", "collaborative learning", "workshop manajemen", "team based learning", "service learning", "presentasi proyek", "feedback dan revisi"],
+      "reason": "Capaian manajemen proyek memerlukan project based learning, capstone project, simulasi, dan magang."
+    },
+    {
+      "outcome_keywords": ["berinovasi", "mengkreasikan", "bereksperimen", "mengeksplorasi", "menghasilkan ide baru", "merancang solusi kreatif", "berpikir lateral", "mengembangkan konsep baru", "brainstorming", "prototyping", "melakukan iterasi", "mengusulkan ide", "membuat mockup"],
+      "recommended_methods": ["design thinking", "brainstorming terstruktur", "hackathon", "workshop kreatif", "project based learning", "simulasi", "collaborative learning", "entrepreneurship project", "capstone project", "studio learning"],
+      "reason": "Capaian kreativitas dan inovasi didukung oleh design thinking, brainstorming, hackathon, dan proyek inovatif."
+    },
+    {
+      "outcome_keywords": ["menerapkan etika", "menghormati hak cipta", "menjaga kerahasiaan", "berlaku adil", "mempertimbangkan dampak sosial", "bertanggung jawab secara sosial", "memahami regulasi", "mematuhi kode etik", "menunjukkan kejujuran akademik", "menghindari plagiarisme", "mempertimbangkan lingkungan", "berlaku inklusif"],
+      "recommended_methods": ["studi kasus etika", "diskusi nilai", "role play", "jurnal reflektif", "seminar etika", "service learning", "presentasi kasus", "debat etika", "portofolio", "peer assessment"],
+      "reason": "Capaian etika dan tanggung jawab sosial paling cocok dengan studi kasus etika, diskusi nilai, dan refleksi."
+    },
+    {
+      "outcome_keywords": ["belajar mandiri", "mengembangkan diri", "mencari informasi secara mandiri", "memanfaatkan sumber belajar", "mengatur belajar", "self directed learning", "beradaptasi", "mengelola kompetensi", "mengidentifikasi kebutuhan belajar", "memperbaiki diri", "melakukan evaluasi diri"],
+      "recommended_methods": ["self directed learning", "e-learning", "modul mandiri", "flipped classroom", "portofolio", "jurnal reflektif", "blended learning", "tugas mandiri", "studi literatur", "online course", "peer teaching"],
+      "reason": "Capaian belajar mandiri paling cocok dengan e-learning, flipped classroom, portofolio, dan modul mandiri."
+    },
+    {
+      "outcome_keywords": ["memimpin", "mengarahkan", "menginspirasi", "memotivasi tim", "mengorganisasikan tim", "mendelegasikan tugas", "membangun visi", "mengelola konflik", "menjadi role model", "memfasilitasi kelompok", "mengembangkan anggota tim", "menunjukkan inisiatif"],
+      "recommended_methods": ["project based learning", "team based learning", "simulasi kepemimpinan", "role play", "magang", "service learning", "diskusi kepemimpinan", "mentoring", "collaborative learning", "capstone project"],
+      "reason": "Capaian kepemimpinan cocok dengan proyek tim, simulasi, role play, magang, dan mentoring."
+    },
+    {
+      "outcome_keywords": ["mengambil keputusan", "memutuskan", "memilih alternatif", "menentukan prioritas", "mempertimbangkan risiko", "membuat keputusan berbasis data", "mengevaluasi opsi", "memilih strategi", "membuat rekomendasi", "menentukan arah"],
+      "recommended_methods": ["studi kasus", "simulasi pengambilan keputusan", "problem based learning", "diskusi kelompok", "role play", "team based learning", "case based learning", "seminar", "analisis skenario"],
+      "reason": "Capaian pengambilan keputusan didukung oleh studi kasus, simulasi, PBL, dan analisis skenario."
+    },
+    {
+      "outcome_keywords": ["melakukan audit", "melakukan investigasi", "melakukan forensik", "menganalisis bukti", "mengumpulkan bukti", "mengamankan barang bukti", "melakukan pemeriksaan", "melakukan pengujian keamanan", "melakukan penetration testing", "melakukan vulnerability assessment", "menganalisis log", "melacak serangan", "mengidentifikasi ancaman", "menyusun laporan forensik", "menyusun laporan investigasi"],
+      "recommended_methods": ["praktikum", "simulasi", "studi kasus", "project based learning", "workshop", "demonstrasi", "presentasi kelompok", "feedback dan revisi", "peer review", "capstone project"],
+      "reason": "Capaian forensik dan investigasi memerlukan praktikum, simulasi, studi kasus nyata, dan presentasi laporan dengan feedback."
+    },
+    {
+      "outcome_keywords": ["mengamankan sistem", "melindungi data", "menerapkan keamanan", "konfigurasi keamanan", "mengimplementasikan firewall", "mengimplementasikan enkripsi", "mengelola akses", "mengelola identitas", "mitigasi risiko", "menerapkan kontrol keamanan", "menganalisis kerentanan", "patch management"],
+      "recommended_methods": ["praktikum", "simulasi", "project based learning", "workshop", "demonstrasi", "studi kasus", "problem based learning", "latihan terstruktur", "e-learning", "capstone project"],
+      "reason": "Capaian keamanan siber memerlukan praktikum langsung, simulasi, dan proyek berbasis skenario nyata."
+    },
+    {
+      "outcome_keywords": ["menganalisis jaringan", "mengkonfigurasi jaringan", "mengelola jaringan", "monitoring jaringan", "troubleshooting jaringan", "mengimplementasikan protokol", "mengelola server", "mengelola infrastruktur", "melakukan instalasi sistem", "mengkonfigurasi sistem operasi"],
+      "recommended_methods": ["praktikum", "simulasi jaringan", "workshop", "demonstrasi", "project based learning", "latihan terstruktur", "studi kasus", "problem based learning", "peer teaching", "capstone project"],
+      "reason": "Capaian jaringan dan infrastruktur TI memerlukan praktikum, simulasi jaringan, demonstrasi, dan proyek nyata."
+    },
+    {
+      "outcome_keywords": ["merancang database", "mengelola database", "mengoptimasi query", "membuat skema", "normalisasi database", "mengimplementasikan SQL", "mengolah data besar", "big data", "data mining", "machine learning", "mengembangkan model AI", "membuat model prediktif", "analisis data", "visualisasi data"],
+      "recommended_methods": ["praktikum", "project based learning", "workshop", "simulasi", "studi kasus", "collaborative coding", "capstone project", "demonstrasi", "feedback dan revisi", "presentasi kelompok"],
+      "reason": "Capaian data dan AI memerlukan praktikum, proyek, workshop, dan demonstrasi berbasis data nyata."
+    },
+    {
+      "outcome_keywords": ["menyusun anggaran", "mengelola keuangan", "menganalisis laporan keuangan", "menghitung biaya", "membuat proyeksi keuangan", "mengelola aset", "melakukan audit keuangan", "membuat laporan akuntansi", "mengelola investasi", "analisis risiko keuangan"],
+      "recommended_methods": ["studi kasus", "simulasi", "problem based learning", "praktikum", "workshop", "project based learning", "diskusi kelompok", "presentasi kelompok", "feedback dan revisi", "seminar"],
+      "reason": "Capaian keuangan dan akuntansi memerlukan studi kasus, simulasi keuangan, dan proyek berbasis data nyata."
+    },
+    {
+      "outcome_keywords": ["menyusun strategi", "merancang strategi bisnis", "mengembangkan model bisnis", "melakukan analisis pasar", "analisis kompetitor", "melakukan segmentasi", "merancang marketing plan", "menyusun business plan", "melakukan studi kelayakan", "menganalisis SWOT"],
+      "recommended_methods": ["studi kasus", "project based learning", "simulasi bisnis", "diskusi kelompok", "presentasi kelompok", "seminar", "workshop", "problem based learning", "feedback dan revisi", "collaborative learning"],
+      "reason": "Capaian strategi dan bisnis didukung oleh studi kasus, simulasi bisnis, proyek, dan presentasi kelompok."
+    },
+    {
+      "outcome_keywords": ["melakukan diagnosis", "melakukan pemeriksaan", "melakukan asesmen", "mengidentifikasi gejala", "menetapkan diagnosa", "merencanakan terapi", "memberikan intervensi", "melakukan konseling", "memberikan rekomendasi klinis", "melakukan tindakan medis", "melakukan perawatan"],
+      "recommended_methods": ["simulasi klinis", "role play", "studi kasus klinis", "praktikum", "observasi lapangan", "magang", "demonstrasi", "problem based learning", "peer review", "feedback dan revisi"],
+      "reason": "Capaian klinis dan kesehatan memerlukan simulasi klinis, role play, praktikum, dan observasi lapangan."
+    },
+    {
+      "outcome_keywords": ["mengajar", "melatih", "membimbing", "menyampaikan materi ajar", "merancang pembelajaran", "membuat RPP", "mengembangkan kurikulum", "melakukan asesmen pembelajaran", "mengelola kelas", "membuat media pembelajaran", "melakukan evaluasi pembelajaran"],
+      "recommended_methods": ["peer teaching", "simulasi mengajar", "microteaching", "observasi kelas", "magang kependidikan", "workshop", "project based learning", "portofolio", "feedback dan revisi", "seminar"],
+      "reason": "Capaian kependidikan memerlukan microteaching, peer teaching, simulasi mengajar, dan observasi kelas."
+    },
+    {
+      "outcome_keywords": ["melakukan pengujian", "melakukan testing", "membuat test case", "melakukan quality assurance", "QA", "validasi sistem", "verifikasi sistem", "uji fungsional", "uji performa", "uji keamanan", "melakukan review kode", "code review", "debugging", "menemukan bug"],
+      "recommended_methods": ["praktikum", "project based learning", "peer review", "workshop", "simulasi", "collaborative coding", "studi kasus", "demonstrasi", "feedback dan revisi", "capstone project"],
+      "reason": "Capaian pengujian dan QA memerlukan praktikum, peer review, collaborative coding, dan proyek nyata."
+    },
+    {
+      "outcome_keywords": ["melakukan perhitungan", "membuktikan", "menderivasi", "memformulasikan persamaan", "menyelesaikan persamaan", "melakukan pemodelan matematis", "melakukan simulasi numerik", "menganalisis secara matematis", "membuktikan teorema", "menerapkan metode numerik"],
+      "recommended_methods": ["latihan soal", "tutorial", "diskusi", "problem based learning", "praktikum komputasi", "simulasi numerik", "workshop", "tanya jawab", "peer teaching", "studi kasus"],
+      "reason": "Capaian matematis dan komputasi didukung oleh latihan soal, tutorial, diskusi, dan praktikum komputasi."
+    },
+    {
+      "outcome_keywords": ["merancang eksperimen", "melakukan eksperimen", "menganalisis hasil eksperimen", "mengolah data eksperimen", "melaporkan hasil eksperimen", "melakukan pengukuran", "mengkalibrasi", "mengoperasikan alat ukur", "melakukan observasi ilmiah", "menyusun laporan praktikum"],
+      "recommended_methods": ["praktikum", "demonstrasi", "project based learning", "observasi lapangan", "workshop", "jurnal praktikum", "peer review", "feedback dan revisi", "presentasi kelompok", "seminar"],
+      "reason": "Capaian eksperimental dan sains memerlukan praktikum, demonstrasi, observasi lapangan, dan pelaporan ilmiah."
+    },
+    {
+      "outcome_keywords": ["menulis kode", "mengimplementasikan algoritma", "mengembangkan fitur", "refactoring", "optimasi kode", "membuat API", "mengintegrasikan sistem", "membuat antarmuka", "UI/UX design", "membuat wireframe", "membuat prototipe aplikasi", "deploy aplikasi", "membuat dokumentasi teknis"],
+      "recommended_methods": ["praktikum", "project based learning", "collaborative coding", "workshop", "peer review", "hackathon", "capstone project", "demonstrasi", "feedback dan revisi", "presentasi kelompok"],
+      "reason": "Capaian pengembangan perangkat lunak memerlukan praktikum, proyek, collaborative coding, peer review, dan demonstrasi."
+    },
+    {
+      "outcome_keywords": ["melakukan mediasi", "melakukan negosiasi", "menyelesaikan sengketa", "menganalisis kasus hukum", "menyusun kontrak", "menyusun dokumen hukum", "melakukan advokasi", "memberikan pendapat hukum", "menganalisis regulasi", "menyusun peraturan"],
+      "recommended_methods": ["studi kasus hukum", "simulasi sidang", "role play", "moot court", "diskusi kelompok", "seminar", "magang", "presentasi kelompok", "problem based learning", "feedback dan revisi"],
+      "reason": "Capaian hukum memerlukan simulasi sidang, moot court, studi kasus, role play, dan magang."
+    },
+    {
+      "outcome_keywords": ["merancang struktur", "menghitung struktur", "merancang konstruksi", "melakukan analisis struktur", "membuat gambar teknik", "merancang sistem mekanikal", "merancang sistem elektrikal", "melakukan estimasi biaya", "menyusun RAB", "melakukan pengawasan konstruksi"],
+      "recommended_methods": ["project based learning", "praktikum", "simulasi", "workshop", "demonstrasi", "studi kasus", "magang", "capstone project", "presentasi kelompok", "feedback dan revisi"],
+      "reason": "Capaian teknik sipil dan mekanikal memerlukan proyek, praktikum, simulasi, dan magang."
+    },
+    {
+      "outcome_keywords": ["menyusun karya seni", "membuat desain grafis", "membuat ilustrasi", "membuat animasi", "merancang produk", "membuat model 3D", "melakukan fotografi", "membuat video", "memproduksi konten kreatif", "melakukan pertunjukan", "membuat karya visual"],
+      "recommended_methods": ["studio learning", "workshop kreatif", "project based learning", "portofolio", "peer review", "demonstrasi", "presentasi karya", "feedback dan revisi", "collaborative learning", "capstone project"],
+      "reason": "Capaian seni dan desain memerlukan studio learning, workshop kreatif, portofolio, dan peer review karya."
+    },
+    {
+      "outcome_keywords": ["melakukan riset pasar", "menganalisis perilaku konsumen", "merancang produk", "mengembangkan produk", "melakukan branding", "menyusun strategi pemasaran", "mengelola media sosial", "melakukan kampanye digital", "menganalisis data pemasaran", "menyusun konten marketing"],
+      "recommended_methods": ["project based learning", "studi kasus", "simulasi", "workshop", "diskusi kelompok", "presentasi kelompok", "feedback dan revisi", "seminar", "problem based learning", "collaborative learning"],
+      "reason": "Capaian pemasaran dan branding didukung oleh proyek, studi kasus, simulasi, dan presentasi kelompok."
+    },
+    {
+      "outcome_keywords": ["melakukan wawancara", "melakukan observasi lapangan", "melakukan survei lapangan", "melakukan focus group discussion", "FGD", "analisis kualitatif", "analisis kuantitatif", "membuat instrumen penelitian", "kuesioner", "menyusun laporan lapangan", "triangulasi data"],
+      "recommended_methods": ["observasi lapangan", "survei", "magang", "project based learning", "studi kasus", "workshop", "seminar", "jurnal reflektif", "presentasi kelompok", "feedback dan revisi"],
+      "reason": "Capaian riset lapangan memerlukan observasi langsung, survei, magang, dan pelaporan dengan feedback."
+    },
+    {
+      "outcome_keywords": ["mengoperasikan mesin", "melakukan perawatan mesin", "melakukan instalasi", "mengkalibrasi alat", "mengoperasikan peralatan laboratorium", "melakukan pengujian material", "mengoperasikan peralatan industri", "melakukan proses manufaktur", "mengoptimasi proses produksi"],
+      "recommended_methods": ["praktikum", "demonstrasi", "workshop", "magang", "simulasi", "project based learning", "latihan terstruktur", "observasi lapangan", "peer teaching", "capstone project"],
+      "reason": "Capaian operasional dan manufaktur memerlukan praktikum, demonstrasi, workshop, dan magang industri."
+    },
+    {
+      "outcome_keywords": ["menyusun rencana bisnis", "mengelola sumber daya manusia", "melakukan rekrutmen", "mengelola kinerja", "menyusun kebijakan", "mengelola organisasi", "melakukan perencanaan strategis", "mengelola operasional", "menyusun prosedur", "melakukan evaluasi program"],
+      "recommended_methods": ["project based learning", "studi kasus", "simulasi manajemen", "role play", "diskusi kelompok", "workshop", "magang", "seminar", "presentasi kelompok", "feedback dan revisi"],
+      "reason": "Capaian manajemen dan SDM memerlukan proyek, studi kasus, simulasi manajemen, dan magang."
+    },
+    {
+      "outcome_keywords": ["mengkomunikasikan secara tertulis", "membuat surat resmi", "membuat laporan resmi", "menyusun berita acara", "menulis memo", "menyusun notula", "membuat brosur", "membuat poster ilmiah", "membuat infografis", "menyusun press release"],
+      "recommended_methods": ["workshop penulisan", "penulisan ilmiah", "peer review", "tugas mandiri", "portofolio", "feedback dan revisi", "presentasi kelompok", "collaborative writing", "studi literatur"],
+      "reason": "Capaian komunikasi tertulis formal memerlukan workshop penulisan, peer review, portofolio, dan feedback serta revisi."
+    }
+  ]
+}
